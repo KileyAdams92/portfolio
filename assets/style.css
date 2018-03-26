@@ -269,10 +269,20 @@ div.block:nth-child(3n) {
     font-size: 12px;
     line-height: 18px;
   }
+  .card-deck {
+    padding-left: 25px;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 360px) {
   h1 {
     font-size: 3em;
+  }
+  .card-deck {
+    padding-left: 25px;
+    text-align: center;
+    margin: 0;
   }
 }
