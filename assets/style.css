@@ -59,7 +59,11 @@ p {
 
 .specialties {
   color: white;
-  background-color: #4682b4;
+  background: url("images/blueLego.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-top: 225px;
   padding-bottom: 225px;
 }
@@ -71,7 +75,11 @@ p {
 
 .connect {
   color: white;
-  background-color: #4682b4;
+  background: url("images/connect.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-top: 250px;
   padding-bottom: 250px;
 }
@@ -228,9 +236,53 @@ div.block:nth-child(3n) {
   margin-top: 100px;
 }
 
-/**
-  * Simple keyframes animation for the chevron on the first slide
-  */
+.projectsButton {
+  margin-top: 50px;
+}
+
+/*Connect with me buttons*/
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* Simple keyframes animation for the chevron on the first slide */
+
 @keyframes chevronAnimation {
   0% {
     transform: translate(0, 0) scale(1, 1);
@@ -243,9 +295,6 @@ div.block:nth-child(3n) {
   }
 }
 
-/**
-  * Responsiveness
-  */
 @media screen and (max-width: 1024px) {
   body {
     font-size: 18px;
