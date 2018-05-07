@@ -18,14 +18,14 @@ h1 {
   text-align: center;
 }
 
-.card-img-top {
+/* .card-img-top {
   width: 250px;
   height: 250px;
   border-radius: 50%;
   margin: 0 20px;
   text-align: center;
   border: #4682b4 solid 1px;
-}
+} */
 
 .jumbotron {
   background: url("images/bluebackground.jpg") no-repeat center center fixed;
@@ -58,14 +58,19 @@ p {
 }
 
 .specialties {
-  color: white;
+  /* color: white;
   background: url("images/blueLego.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  padding-top: 225px;
-  padding-bottom: 225px;
+  background-size: cover; */
+  background-color: #59a5d8;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.secondRowSpecial {
+  padding-top: 40px;
 }
 
 /* .projects {
@@ -75,7 +80,8 @@ p {
 
 .connect {
   color: white;
-  background: url("images/blueenvelope.jpg") no-repeat center center fixed;
+  /* background-color: #6193bf; */
+  background: url("images/building.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,17 +107,26 @@ p {
   padding-bottom: 150px;
 }
 
-.card-deck {
-  padding-left: 150px;
+.card {
+  border: #2660a4 solid 1px;
 }
+/* .card-deck {
+  padding-left: 150px;
+} */
 
 .aboutMe {
   height: 750px;
 }
 
 .icon {
-  height: 225px;
-  width: 225px;
+  height: 175px;
+  width: 175px;
+}
+
+#expressIcon {
+  padding-top: 60px;
+  width: 300px;
+  height: 100px;
 }
 
 .socialIcon {
