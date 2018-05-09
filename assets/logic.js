@@ -1,7 +1,15 @@
-var typeIt = {};
-new TypeIt(".type-it", {
-  speed: 50
-})
-  .type("Kiley Adams")
-  .pause(500)
-  .type("Web Developer");
+new TypeIt("#name", {
+  strings: ["Kiley Adams"],
+  speed: 50,
+  autoStart: false
+});
+
+var here = function() {
+  console.log("in the JS file");
+};
+
+$(document).ready(function() {
+  here();
+
+  TypeIt();
+});

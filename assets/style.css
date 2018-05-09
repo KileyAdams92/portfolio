@@ -2,30 +2,10 @@ h1 {
   text-align: center;
 }
 
-/* .display-4 {
-  text-align: left;
-} */
-
-/* .card {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin: 0 20px;
-} */
-
 .card {
   border: none;
   text-align: center;
 }
-
-/* .card-img-top {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  margin: 0 20px;
-  text-align: center;
-  border: #4682b4 solid 1px;
-} */
 
 .jumbotron {
   background: url("images/bluebackground.jpg") no-repeat center center fixed;
@@ -58,12 +38,6 @@ p {
 }
 
 .specialties {
-  /* color: white;
-  background: url("images/blueLego.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
   background-color: #59a5d8;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -73,11 +47,9 @@ p {
   padding-top: 40px;
 }
 
-/* .projects {
-  padding-top: 200px;
-  padding-bottom: 200px;
-} */
-
+#expressIcon {
+  padding-right: 30px;
+}
 .connect {
   color: white;
   /* background-color: #6193bf; */
@@ -142,6 +114,25 @@ p {
   height: 215px;
   width: 200px;
 } */
+
+/*Portfolio Img Styling */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 /* Button styling */
 /* Grow Rotate */
@@ -298,6 +289,10 @@ div.block:nth-child(3n) {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+.codeTags:hover {
+  color: #6495ed;
 }
 
 /* Simple keyframes animation for the chevron on the first slide */
