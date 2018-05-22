@@ -15,9 +15,13 @@ h1 {
   background-size: cover;
 }
 
+#name {
+  padding-top: 300px;
+}
+
 .jumbotron {
   /* background-color: #8a93d9; */
-  height: 750px;
+  height: 850px;
 }
 
 h1,
