@@ -10,21 +10,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Personal stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
-
+    <link rel=”stylesheet” id=”font-awesome-css” href=”//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css” type=”text/css”
+        media=”screen”>
 </head>
 
 <body>
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <img class="img-fluid" id="homeLogo" src="">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#connect">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="./assets/kileyresume.pdf">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <div class="container-fluid">
-        <div class="jumbotron">
-            <h1 class="display-4" id="name"></h1>
-            <p class="lead">Web Developer / Continuous Learner / Collaborator</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg hvr-grow-rotate" href="#connect" role="button">Let's chat!</a>
-            </p>
-        </div>
+    <div class="jumbotron" id="jumbotron">
+        <h1 class="display-4" id="name"></h1>
+        <p class="lead">Web Developer / Continuous Learner / Collaborator</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg hvr-grow-rotate" href="#connect" role="button">Let's chat!</a>
+        </p>
     </div>
-    <div class="container aboutMe p-5 fromTopIn">
+
+    <div class="container aboutMe p-5 fromTopIn" id="about">
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="aboutSection">About Me</h1>
@@ -38,8 +69,8 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid specialties">
-        <h1 class="special">WHAT I SPECIALIZE IN</h1>
+    <div class="container-fluid specialties" id="specialties">
+        <h1 class=" special">WHAT I SPECIALIZE IN</h1>
         <div class="row">
             <div class="col-lg-3">
                 <img class="icon" src="assets/images/html5.svg" alt="html5 icon">
@@ -70,7 +101,7 @@
         </div>
 
     </div>
-    <div class="container projects">
+    <div class="container projects" id="projects">
         <h1 class="portTitle">PORTFOLIO</h1>
         <div class="row">
             <div class="card-deck">
@@ -106,7 +137,8 @@
                 </div>
                 <div class="card">
                     <a href="https://kileyadams92.github.io/giftastic/">
-                        <img class="card-img-top hvr-grow" src="assets/images/mario.jpg" alt="Image of Mario and other Mario Bros characters">
+                        <img class="card-img-top hvr-grow" src="assets/images/mario.jpg" alt="Image of Mario and other
+        Mario Bros characters">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Mario Giphy</h5>
@@ -126,7 +158,8 @@
             <div class="card-deck">
                 <div class="card">
                     <a href="https://kileyadams92.github.io/TriviaGame/">
-                        <img class="card-img-top hvr-grow" src="assets/images/website.png" alt="Image of cell phone and block letters that say social media">
+                        <img class="card-img-top hvr-grow" src="assets/images/website.png" alt="Image of cell phone and
+        block letters that say social media">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Website Trivia</h5>
@@ -142,7 +175,8 @@
                 </div>
                 <div class="card">
                     <a href="https://secret-brook-82924.herokuapp.com/">
-                        <img class="card-img-top hvr-grow" src="assets/images/paperAndPen.jpg" alt="Picture of paper and pen">
+                        <img class="card-img-top hvr-grow" src="assets/images/paperAndPen.jpg" alt="Picture of paper
+        and pen">
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">Mindfully</h5>
@@ -185,20 +219,45 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-3" id="email">
+                    <a href="#" target="blank">
+                        <img class="socialIcon hvr-pulse" id="email" src="assets/images/email.png" alt="github icon">
+                    </a>
+                </div>
+                <div class="col-lg-3">
                     <a href="https://www.linkedin.com/in/kiley-adams-0223a6b8/" target="blank">
                         <img class="socialIcon hvr-pulse" src="assets/images/linkedin.png" alt="linkedin icon">
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <a href="https://twitter.com/KDcodes" target="blank">
                         <img class="socialIcon hvr-pulse" src="assets/images/Twitter.png" alt="Twitter icon">
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <a href="https://github.com/KileyAdams92" target="blank">
                         <img class="socialIcon hvr-pulse" src="assets/images/github.png" alt="github icon">
                     </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="emailModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="emailModalLabel">I would love to hear from you!</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="emailAddress">Feel free to email me at kileyadams92@gmail.com </h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary emailBtn" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -212,7 +271,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.0/typeit.js" />
-    <script src="assets/logic.js" type="text/javascript"></script>
+    <script src="./assets/logic.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         new TypeIt("#name", {
@@ -225,6 +284,11 @@
         $(document).ready(function () {
             TypeIt();
         });
+
+        $("#email").on("click", function () {
+            $('#emailModal').modal('show');
+        })
+
     </script>
 
 

@@ -7,6 +7,17 @@ h1 {
   text-align: center;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-item {
+  font-family: "Abel", sans-serif;
+  color: white;
+}
+
 .jumbotron {
   background: url("images/bluebackground.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -16,7 +27,7 @@ h1 {
 }
 
 #name {
-  padding-top: 300px;
+  padding-top: 200px;
 }
 
 .jumbotron {
@@ -35,6 +46,11 @@ p {
 .display-4 {
   padding-top: 200px;
   color: white;
+  font-size: 100px;
+}
+
+.navbar {
+  background: none;
 }
 
 .aboutSection {
@@ -51,9 +67,9 @@ p {
   padding-top: 40px;
 }
 
-#expressIcon {
+/* #expressIcon {
   padding-right: 30px;
-}
+} */
 .connect {
   color: white;
   /* background-color: #6193bf; */
@@ -75,7 +91,7 @@ p {
 }
 
 .portTitle {
-  padding-top: 150px;
+  padding-top: 60px;
 }
 
 .projects {
@@ -99,14 +115,13 @@ p {
 }
 
 .icon {
-  height: 175px;
   width: 175px;
 }
 
 #expressIcon {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   width: 300px;
-  height: 100px;
+  height: 150px;
 }
 
 .socialIcon {
@@ -252,6 +267,36 @@ div.block:nth-child(3n) {
 
 .projectsButton {
   margin-top: 50px;
+}
+
+.back-to-top {
+  background: none;
+
+  margin: 0;
+
+  position: fixed;
+
+  bottom: 0;
+
+  right: 0;
+
+  width: 70px;
+
+  height: 70px;
+
+  z-index: 100;
+
+  display: none;
+
+  text-decoration: none;
+
+  color: #ffffff;
+
+  background-color: #ff9000;
+}
+
+.back-to-top i {
+  font-size: 60px;
 }
 
 /*Connect with me buttons*/
