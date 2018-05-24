@@ -376,13 +376,19 @@ div.block:nth-child(3n) {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .row2Projects {
+    padding-top: 0;
+  }
+}
+
 @media screen and (max-width: 420px) {
   body {
     font-size: 12px;
     line-height: 18px;
   }
   .card-deck {
-    padding-left: 25px;
+    /* padding-left: 25px; */
     text-align: center;
     margin: 0;
   }
