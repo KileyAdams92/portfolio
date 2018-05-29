@@ -1,37 +1,31 @@
 new TypeIt("#name", {
   strings: ["Kiley Adams"],
-  speed: 50,
+  speed: 100,
   autoStart: false
 });
 
-var here = function() {
-  console.log("in the JS file");
-};
-
 $(document).ready(function() {
-  here();
-
   TypeIt();
+  // $("div").animate({
+  //     left: '250px',
+  //     opacity: '0.5',
+  //     height: '150px',
+  //     width: '150px'
+  // });
 });
 
-jQuery(document).ready(function() {
-  var offset = 250;
-
-  var duration = 300;
-
-  jQuery(window).scroll(function() {
-    if (jQuery(this).scrollTop() > offset) {
-      jQuery(".back-to-top").fadeIn(duration);
-    } else {
-      jQuery(".back-to-top").fadeOut(duration);
-    }
-  });
-
-  jQuery(".back-to-top").click(function(event) {
-    event.preventDefault();
-
-    jQuery("html, body").animate({ scrollTop: 0 }, duration);
-
-    return false;
-  });
+$("#email").on("click", function() {
+  $("#emailModal").modal("show");
 });
+
+// $(document).ready(function () {
+//     $(".button a").click(function () {
+//         $(".overlay").fadeToggle(200);
+//         $(this).toggleClass('btn-open').toggleClass('btn-close');
+//     });
+// });
+// $('.overlay').on('click', function () {
+//     $(".overlay").fadeToggle(200);
+//     $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+//     open = false;
+// });

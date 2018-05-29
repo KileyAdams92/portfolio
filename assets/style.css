@@ -31,7 +31,6 @@ nav {
 }
 
 .jumbotron {
-  /* background-color: #8a93d9; */
   height: 850px;
 }
 
@@ -67,12 +66,8 @@ p {
   padding-top: 40px;
 }
 
-/* #expressIcon {
-  padding-right: 30px;
-} */
 .connect {
   color: white;
-  /* background-color: #6193bf; */
   background: url("images/building.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -106,9 +101,6 @@ p {
 .card {
   border: #2660a4 solid 1px;
 }
-/* .card-deck {
-  padding-left: 150px;
-} */
 
 .aboutMe {
   height: 750px;
@@ -119,7 +111,6 @@ p {
 }
 
 #expressIcon {
-  /* padding-top: 60px; */
   width: 300px;
   height: 150px;
 }
@@ -128,11 +119,6 @@ p {
   height: 150px;
   width: 150px;
 }
-
-/* #jsIcon {
-  height: 215px;
-  width: 200px;
-} */
 
 /*Portfolio Img Styling */
 .hvr-grow {
@@ -379,6 +365,9 @@ div.block:nth-child(3n) {
 @media screen and (max-width: 576px) {
   .row2Projects {
     padding-top: 0;
+  }
+  #email {
+    padding-top: 10px;
   }
 }
 
